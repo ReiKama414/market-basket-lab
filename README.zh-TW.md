@@ -5,7 +5,7 @@
 > **購物籃關聯規則挖掘工作台**。實作 Apriori 與 FP-Growth 演算法，支援 Web Worker 背景多執行緒運算、ECharts 多維度統計圖表、Cytoscape.js 關聯網絡拓撲、購物車即時推薦模擬與 IndexedDB 本機資料庫持久化
 
 <p align="center">
-  <img src="test-results/screenshots/workbench-dark.png" alt="Market Basket Lab 專業工作台介面" width="900" />
+  <img src="docs/preview.png" alt="Market Basket Lab 專業工作台介面" width="900" />
 </p>
 
 <p align="center">

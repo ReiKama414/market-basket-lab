@@ -5,7 +5,7 @@
 > **Market basket association rules mining workbench**. Implements Apriori and FP-Growth algorithms, featuring Web Worker background multi-threading, interactive ECharts statistics, Cytoscape.js directed association networks, What-If cart cross-sell simulator, and IndexedDB local persistence.
 
 <p align="center">
-  <img src="test-results/screenshots/workbench-dark.png" alt="Market Basket Lab Professional Workbench" width="900" />
+  <img src="docs/preview.png" alt="Market Basket Lab Professional Workbench" width="900" />
 </p>
 
 <p align="center">
