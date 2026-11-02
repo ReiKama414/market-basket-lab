@@ -39,8 +39,8 @@ export const MiningControlBar: React.FC<MiningControlBarProps> = ({
   const liftPresets = [1.0, 1.2, 1.5, 2.0];
 
   return (
-    <div className="bg-zinc-50 dark:bg-zinc-900/60 border-b border-zinc-200 dark:border-zinc-800 px-3 sm:px-4 py-2 text-xs transition-colors">
-      <div className="max-w-[1700px] mx-auto flex flex-wrap items-center justify-between gap-2.5 min-w-0">
+    <div className="bg-zinc-50 dark:bg-zinc-900/60 border-b border-zinc-200 dark:border-zinc-800 px-3 sm:px-4 py-2.5 text-xs transition-colors">
+      <div className="max-w-[1700px] mx-auto flex flex-wrap items-center justify-between gap-3 min-w-0">
         {/* Left: Quick Parameter Pills & Preset Triggers */}
         <div className="flex flex-wrap items-center gap-2 min-w-0">
           <div className="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400 font-medium text-[11px] shrink-0 mr-1">
@@ -53,7 +53,7 @@ export const MiningControlBar: React.FC<MiningControlBarProps> = ({
             <button
               type="button"
               onClick={() => setActivePopover(activePopover === 'support' ? null : 'support')}
-              className={`flex items-center gap-1 px-2.5 py-1 rounded-md border text-xs transition-colors shrink-0 ${
+              className={`flex items-center gap-1.5 px-2.5 py-1.5 min-h-8 rounded-md border text-xs transition-colors shrink-0 ${
                 activePopover === 'support'
                   ? 'bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 border-zinc-900 dark:border-zinc-100 font-medium'
                   : 'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700'
@@ -136,7 +136,7 @@ export const MiningControlBar: React.FC<MiningControlBarProps> = ({
             <button
               type="button"
               onClick={() => setActivePopover(activePopover === 'confidence' ? null : 'confidence')}
-              className={`flex items-center gap-1 px-2.5 py-1 rounded-md border text-xs transition-colors shrink-0 ${
+              className={`flex items-center gap-1.5 px-2.5 py-1.5 min-h-8 rounded-md border text-xs transition-colors shrink-0 ${
                 activePopover === 'confidence'
                   ? 'bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 border-zinc-900 dark:border-zinc-100 font-medium'
                   : 'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700'
@@ -199,7 +199,7 @@ export const MiningControlBar: React.FC<MiningControlBarProps> = ({
             <button
               type="button"
               onClick={() => setActivePopover(activePopover === 'lift' ? null : 'lift')}
-              className={`flex items-center gap-1 px-2.5 py-1 rounded-md border text-xs transition-colors shrink-0 ${
+              className={`flex items-center gap-1.5 px-2.5 py-1.5 min-h-8 rounded-md border text-xs transition-colors shrink-0 ${
                 activePopover === 'lift'
                   ? 'bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 border-zinc-900 dark:border-zinc-100 font-medium'
                   : 'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700'
@@ -313,7 +313,7 @@ export const MiningControlBar: React.FC<MiningControlBarProps> = ({
             type="button"
             onClick={onApply}
             disabled={isLoading}
-            className="flex items-center gap-1.5 px-3 py-1 bg-zinc-900 dark:bg-zinc-100 hover:bg-zinc-800 dark:hover:bg-zinc-200 text-white dark:text-zinc-900 rounded-md text-xs font-semibold shadow-xs active:scale-95 transition disabled:opacity-50 disabled:cursor-not-allowed shrink-0"
+            className="flex items-center gap-1.5 px-3 py-1.5 min-h-8 bg-zinc-900 dark:bg-zinc-100 hover:bg-zinc-800 dark:hover:bg-zinc-200 text-white dark:text-zinc-900 rounded-md text-xs font-semibold shadow-xs active:scale-95 transition disabled:opacity-50 disabled:cursor-not-allowed shrink-0"
           >
             <Sparkles className="w-3.5 h-3.5" />
             <span>套用門檻並重新計算</span>
